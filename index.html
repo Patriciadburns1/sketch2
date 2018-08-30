@@ -5,8 +5,11 @@
     <title> Sketch </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous"> -->
+    <link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,37 +18,51 @@
 
 <body>
     <div class="container">
-        <div class="headerContainer">
-            <div class="circleDiv"> 
-                <div class="outerCircle">
-                    <div class="innerCircle">
-                        <p class="k"> K </p>
-                    </div>
+        <div class="row">
+            <div class="col s5 center divForcircleSVG">
+                    <svg viewBox='0 0 100 100'>
+                            <circle cx='50' cy='50' r='45' id='gray'/>
+                            <circle cx='50' cy='50' r='45' id='gray2'/>
+                            <circle cx='50' cy='50' r='45' id='green'/>
+                            <circle cx='50' cy='50' r='45' id='gray3'/>
+                            <circle cx='50' cy='50' r='45' id='gray4'/>                   
+                    </svg>
+                        <div class="innerCircle">
+                                <p class="k"> K </p>        
+                        </div>      
+            </div>
+            <div class="col s7">
+                <div class="headerDiv">
+                    <p> How much time do you plan to spend taking Acne courses and lessons? </p>
+                    <div class="container">
+                            <div class="row">
+                                <div class="questions col s12">
+                                    <p class="questionText"> About an hour a day. </p>
+                                </div>
+                                <div class="questions col s12">
+                                    <p class="questionText"> More than 1 hour per day. </p>
+                                </div>
+                                <div class="questions col s12">
+                                    <p class="questionText"> 1 to 3 hours per week. </p>
+                                </div>
+                                <div class="questions col s12">
+                                    <p class="questionText"> I don't plan to train regularly.</p>
+                                </div>
+                                <div class="row"> 
+                                    <div class="col s2">
+                                        <p class="questionNextorDone"> Next Question </p>     
+                                    </div>
+                                    <div class="col s4 ">
+                                        <p class="questionNextorDone"> Done</p>
+                                    </div>
+                                </div>
+                              
+                            </div>
+                        </div>
                 </div>
             </div>
-        <div class="headerDiv">
-                <p> How much time do you plan to spend taking Acne courses and lessons? </p>
-        </div>
         </div>
     </div>
-
-    <div class="container">
-        <div>
-                <div class="questions">
-                    <p> About an hour a day. </p>
-                </div>
-                <div class="questions">
-                    <p> More than 1 hour per day. </p>
-                </div>
-                <div class="questions">
-                    <p> 1 to 3 hours per week. </p>
-                </div>
-                <div class="questions">
-                    <p> I don't plan to train regularly </p>
-                </div>
-            </div>
-    </div>
-  
 
 
 </body>

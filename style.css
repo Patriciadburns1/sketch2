@@ -1,7 +1,6 @@
 .container{
-    display: flex; 
-    justify-content: center; 
-    width: 100%;
+    width: 90vw;
+    margin-top: 2%;
 }
 
 
@@ -14,6 +13,10 @@
     display: flex;
     justify-content: center;
     margin: 22px auto; 
+    position: absolute; 
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
 }
 
 .k{
@@ -59,11 +62,110 @@
     width: 100vw;   
 }
 
-.questions:hover { 
+.questions:hover{ 
     background-color: lightblue; 
 }
 
-    
+.divForcircleSVG{
+    position: relative;
+}
+
+.col .row {
+    margin-left: 0; 
+    margin-right: 0; 
+}
+
+#circle, #circle .segment {
+  border-color: lightgray;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  box-sizing: border-box;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+#circle .segment {
+  -webkit-clip-path: inset(0 40px 50px 40px);
+  left: -5px;
+  position: absolute;
+  top: -5px;
+}
+
+
+svg{
+  height: 115px;
+  width: 115px;  
+}
+
+.svgIcon{
+    height: 30px;
+    width: 30px;
+}
+
+circle {
+  stroke-width: 4px;
+  fill: transparent;
+}
+#gray{
+  stroke: #AAA;
+}
+#gray2{
+  stroke: #AAA;
+  stroke-dasharray: 35.5, 284; 
+  stroke-dashoffset: -159.75; 
+}
+#gray3{
+  stroke:  #AAA;
+  stroke-dasharray: 35.5, 284; 
+  stroke-dashoffset: -88.75; 
+}
+
+#gray4{
+  stroke:  #AAA;
+  stroke-dasharray: 35.5, 284; 
+  stroke-dashoffset: -17.75;
+}
+
+#green{
+  stroke: rgb(65, 199, 65);
+  stroke-dasharray: 35.5, 284;
+  stroke-dashoffset: -230.75; 
+}
+
+.questionNextorDone{
+    color: #215b99;
+    font-size: 18px; 
+}
+
+.questionNextorDone:hover{
+    color: #2e80da;
+    font-size: 18px; 
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    .headerDiv{
+        font-size: 16px
+    } 
+
+    .row .col {
+        padding: 0; 
+    }
+    .questions {
+        font-size: 14px;
+    }
+    .questionNextorDone{
+        font-size: 15px;
+    }
+    .questionNextorDone:hover{
+        color: #2e80da;
+        font-size: 18px; 
+    }
+}
+
+
     
     
 
